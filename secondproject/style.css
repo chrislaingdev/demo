@@ -1,0 +1,170 @@
+body {
+  background-color: rgb(20, 200, 200);
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.ships-remaining-container{
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(110, 110, 110);
+  padding: 10px 5px;
+}
+
+
+.ships-remaining-header{
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0px 0px;
+
+}
+
+.ship-names-container{
+  display: flex;
+  column-gap: 10px;
+  margin-top: 8px;
+
+}
+
+.ship-name-box{
+  border: 3px solid black;
+  text-align: center;
+  background-color: rgb(20, 200, 200);
+  display: flex;
+  align-items: center;
+}
+
+.ship-name-text{
+  font-size: 25px;
+  margin: 0px 0px;
+  padding: 0 6px;
+}
+
+.game-phase-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  margin: 0px 0px;
+}
+
+.title-header {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.game-phase-text{
+  margin: 0px 0px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(110, 110, 110);
+  border: 3px solid black;
+  padding: 10px 0px;
+  margin-top: 1%;
+}
+
+.maps-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 1px;
+  row-gap: 1px;
+  padding-right: 5%;
+  
+}
+.grid-square {
+  background-color: rgb(20, 200, 200);
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+.grid-square:hover {
+  opacity: 80%;
+}
+
+.map-marker-horizontal, .map-marker-vertical{
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.map-marker-horizontal{
+  margin: 10% 0;
+}
+.map-marker-vertical{
+  margin: 0 -20px;
+}
+
+.message-box{
+  border: 3px solid black;
+  height: 95%;
+  margin: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 200, 200) ;
+}
+.message-box-text {
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons {
+  font-size: 30px;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  background-color: darkgrey;
+  border: 3px solid black;
+
+}
+
+.buttons:hover {
+  opacity: 80%;
+}
+.buttons:active {
+  opacity: 50%;
+}
+
+.ship {
+  background-color: darkgray;
+}
+
+.isSunk{
+  background-color: red;
+}
+
+.hide{
+  visibility: hidden;
+}

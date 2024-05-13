@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second project</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="ships-remaining-container">
+        <p class="ships-remaining-header">Player Ships Remaining</p>
+        <div class="ship-names-container">
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="player-aircraft-carrier">Aircraft Carrier</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="player-battleship">Battleship</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="player-cruiser">Cruiser</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="player-submarine">Submarine</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="player-destroyer">Destroyer</p>
+          </div>
+        </div>
+      </div>
+      <div class="game-phase-container">
+        <p class="title-header" id="title-header">Battleship</p>
+        <p class="game-phase-text" id="game-phase-text">pre-game</p>
+        
+      </div> 
+      <div class="ships-remaining-container"> 
+        <p class="ships-remaining-header">Enemy Ships Remaining</p>
+        <div class="ship-names-container">
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="enemy-aircraft-carrier">Aircraft Carrier</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="enemy-battleship">Battleship</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="enemy-cruiser">Cruiser</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="enemy-submarine">Submarine</p>
+          </div>
+          <div class="ship-name-box">
+            <p class="ship-name-text" id="enemy-destroyer">Destroyer</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="maps-container">
+        <div class="grid-container player">
+          <p class="map-marker-horizontal"> </p>
+          <p class="map-marker-horizontal">0</p>
+          <p class="map-marker-horizontal">1</p>
+          <p class="map-marker-horizontal">2</p>
+          <p class="map-marker-horizontal">3</p>
+          <p class="map-marker-horizontal">4</p>
+          <p class="map-marker-horizontal">5</p>
+          <p class="map-marker-horizontal">6</p>
+          <p class="map-marker-horizontal">7</p>
+          <p class="map-marker-horizontal">8</p>
+          <p class="map-marker-horizontal">9</p>
+          <p class="map-marker-vertical">0</p>
+          <div class="grid-square" id="00">&#x26ab</div>
+          <div class="grid-square" id="01">&#x26ab</div>
+          <div class="grid-square" id="02">&#x26ab</div>
+          <div class="grid-square" id="03">&#x26ab</div>
+          <div class="grid-square" id="04">&#x26ab</div>
+          <div class="grid-square" id="05">&#x26ab</div>
+          <div class="grid-square" id="06">&#x26ab</div>
+          <div class="grid-square" id="07">&#x26ab</div>
+          <div class="grid-square" id="08">&#x26ab</div>
+          <div class="grid-square" id="09">&#x26ab</div>
+          <p class="map-marker-vertical">1</p>
+          <div class="grid-square" id="10">&#x26ab</div>
+          <div class="grid-square" id="11">&#x26ab</div>
+          <div class="grid-square" id="12">&#x26ab</div>
+          <div class="grid-square" id="13">&#x26ab</div>
+          <div class="grid-square" id="14">&#x26ab</div>
+          <div class="grid-square" id="15">&#x26ab</div>
+          <div class="grid-square" id="16">&#x26ab</div>
+          <div class="grid-square" id="17">&#x26ab</div>
+          <div class="grid-square" id="18">&#x26ab</div>
+          <div class="grid-square" id="19">&#x26ab</div>
+          <p class="map-marker-vertical">2</p>
+          <div class="grid-square" id="20">&#x26ab</div>
+          <div class="grid-square" id="21">&#x26ab</div>
+          <div class="grid-square" id="22">&#x26ab</div>
+          <div class="grid-square" id="23">&#x26ab</div>
+          <div class="grid-square" id="24">&#x26ab</div>
+          <div class="grid-square" id="25">&#x26ab</div>
+          <div class="grid-square" id="26">&#x26ab</div>
+          <div class="grid-square" id="27">&#x26ab</div>
+          <div class="grid-square" id="28">&#x26ab</div>
+          <div class="grid-square" id="29">&#x26ab</div>
+          <p class="map-marker-vertical">3</p>
+          <div class="grid-square" id="30">&#x26ab</div>
+          <div class="grid-square" id="31">&#x26ab</div>
+          <div class="grid-square" id="32">&#x26ab</div>
+          <div class="grid-square" id="33">&#x26ab</div>
+          <div class="grid-square" id="34">&#x26ab</div>
+          <div class="grid-square" id="35">&#x26ab</div>
+          <div class="grid-square" id="36">&#x26ab</div>
+          <div class="grid-square" id="37">&#x26ab</div>
+          <div class="grid-square" id="38">&#x26ab</div>
+          <div class="grid-square" id="39">&#x26ab</div>
+          <p class="map-marker-vertical">4</p>
+          <div class="grid-square" id="40">&#x26ab</div>
+          <div class="grid-square" id="41">&#x26ab</div>
+          <div class="grid-square" id="42">&#x26ab</div>
+          <div class="grid-square" id="43">&#x26ab</div>
+          <div class="grid-square" id="44">&#x26ab</div>
+          <div class="grid-square" id="45">&#x26ab</div>
+          <div class="grid-square" id="46">&#x26ab</div>
+          <div class="grid-square" id="47">&#x26ab</div>
+          <div class="grid-square" id="48">&#x26ab</div>
+          <div class="grid-square" id="49">&#x26ab</div>
+          <p class="map-marker-vertical">5</p>
+          <div class="grid-square" id="50">&#x26ab</div>
+          <div class="grid-square" id="51">&#x26ab</div>
+          <div class="grid-square" id="52">&#x26ab</div>
+          <div class="grid-square" id="53">&#x26ab</div>
+          <div class="grid-square" id="54">&#x26ab</div>
+          <div class="grid-square" id="55">&#x26ab</div>
+          <div class="grid-square" id="56">&#x26ab</div>
+          <div class="grid-square" id="57">&#x26ab</div>
+          <div class="grid-square" id="58">&#x26ab</div>
+          <div class="grid-square" id="59">&#x26ab</div>
+          <p class="map-marker-vertical">6</p>
+          <div class="grid-square" id="60">&#x26ab</div>
+          <div class="grid-square" id="61">&#x26ab</div>
+          <div class="grid-square" id="62">&#x26ab</div>
+          <div class="grid-square" id="63">&#x26ab</div>
+          <div class="grid-square" id="64">&#x26ab</div>
+          <div class="grid-square" id="65">&#x26ab</div>
+          <div class="grid-square" id="66">&#x26ab</div>
+          <div class="grid-square" id="67">&#x26ab</div>
+          <div class="grid-square" id="68">&#x26ab</div>
+          <div class="grid-square" id="69">&#x26ab</div>
+          <p class="map-marker-vertical">7</p>
+          <div class="grid-square" id="70">&#x26ab</div>
+          <div class="grid-square" id="71">&#x26ab</div>
+          <div class="grid-square" id="72">&#x26ab</div>
+          <div class="grid-square" id="73">&#x26ab</div>
+          <div class="grid-square" id="74">&#x26ab</div>
+          <div class="grid-square" id="75">&#x26ab</div>
+          <div class="grid-square" id="76">&#x26ab</div>
+          <div class="grid-square" id="77">&#x26ab</div>
+          <div class="grid-square" id="78">&#x26ab</div>
+          <div class="grid-square" id="79">&#x26ab</div>
+          <p class="map-marker-vertical">8</p>
+          <div class="grid-square" id="80">&#x26ab</div>
+          <div class="grid-square" id="81">&#x26ab</div>
+          <div class="grid-square" id="82">&#x26ab</div>
+          <div class="grid-square" id="83">&#x26ab</div>
+          <div class="grid-square" id="84">&#x26ab</div>
+          <div class="grid-square" id="85">&#x26ab</div>
+          <div class="grid-square" id="86">&#x26ab</div>
+          <div class="grid-square" id="87">&#x26ab</div>
+          <div class="grid-square" id="88">&#x26ab</div>
+          <div class="grid-square" id="89">&#x26ab</div>
+          <p class="map-marker-vertical">9</p>
+          <div class="grid-square" id="90">&#x26ab</div>
+          <div class="grid-square" id="91">&#x26ab</div>
+          <div class="grid-square" id="92">&#x26ab</div>
+          <div class="grid-square" id="93">&#x26ab</div>
+          <div class="grid-square" id="94">&#x26ab</div>
+          <div class="grid-square" id="95">&#x26ab</div>
+          <div class="grid-square" id="96">&#x26ab</div>
+          <div class="grid-square" id="97">&#x26ab</div>
+          <div class="grid-square" id="98">&#x26ab</div>
+          <div class="grid-square" id="99">&#x26ab</div>
+        </div>
+          <div class="message-box">
+            <div >
+              <p class="message-box-text" id="message-box-text-1">Click reroll to generate a new random board.</p>
+              <p class="message-box-text" id="message-box-text-2">Click start to choose the current board displayed.</p>
+              <div class="buttons-container">
+
+                  <button class="buttons" onclick="makeNewMap()" id="reroll-button">Re-roll</button>
+                  <button class="buttons" onclick="startGame()" id="start-button">Start</button>
+                  <button class="buttons hide" onclick="enemyTurn()" id="next-button">Next</button>
+
+              </div> 
+            </div>
+          </div>
+        <div class="grid-container enemy">
+          <p class="map-marker-horizontal"> </p>
+          <p class="map-marker-horizontal">0</p>
+          <p class="map-marker-horizontal">1</p>
+          <p class="map-marker-horizontal">2</p>
+          <p class="map-marker-horizontal">3</p>
+          <p class="map-marker-horizontal">4</p>
+          <p class="map-marker-horizontal">5</p>
+          <p class="map-marker-horizontal">6</p>
+          <p class="map-marker-horizontal">7</p>
+          <p class="map-marker-horizontal">8</p>
+          <p class="map-marker-horizontal">9</p>
+          <p class="map-marker-vertical">0</p>
+          <div class="grid-square" id="e00" onclick="getPressedCoor('00')">&#x26ab</div>
+          <div class="grid-square" id="e01" onclick="getPressedCoor('01')">&#x26ab</div>
+          <div class="grid-square" id="e02" onclick="getPressedCoor('02')">&#x26ab</div>
+          <div class="grid-square" id="e03" onclick="getPressedCoor('03')">&#x26ab</div>
+          <div class="grid-square" id="e04" onclick="getPressedCoor('04')">&#x26ab</div>
+          <div class="grid-square" id="e05" onclick="getPressedCoor('05')">&#x26ab</div>
+          <div class="grid-square" id="e06" onclick="getPressedCoor('06')">&#x26ab</div>
+          <div class="grid-square" id="e07" onclick="getPressedCoor('07')">&#x26ab</div>
+          <div class="grid-square" id="e08" onclick="getPressedCoor('08')">&#x26ab</div>
+          <div class="grid-square" id="e09" onclick="getPressedCoor('09')">&#x26ab</div>
+          <p class="map-marker-vertical">1</p>
+          <div class="grid-square" id="e10" onclick="getPressedCoor('10')">&#x26ab</div>
+          <div class="grid-square" id="e11" onclick="getPressedCoor('11')">&#x26ab</div>
+          <div class="grid-square" id="e12" onclick="getPressedCoor('12')">&#x26ab</div>
+          <div class="grid-square" id="e13" onclick="getPressedCoor('13')">&#x26ab</div>
+          <div class="grid-square" id="e14" onclick="getPressedCoor('14')">&#x26ab</div>
+          <div class="grid-square" id="e15" onclick="getPressedCoor('15')">&#x26ab</div>
+          <div class="grid-square" id="e16" onclick="getPressedCoor('16')">&#x26ab</div>
+          <div class="grid-square" id="e17" onclick="getPressedCoor('17')">&#x26ab</div>
+          <div class="grid-square" id="e18" onclick="getPressedCoor('18')">&#x26ab</div>
+          <div class="grid-square" id="e19" onclick="getPressedCoor('19')">&#x26ab</div>
+          <p class="map-marker-vertical">2</p>
+          <div class="grid-square" id="e20" onclick="getPressedCoor('20')">&#x26ab</div>
+          <div class="grid-square" id="e21" onclick="getPressedCoor('21')">&#x26ab</div>
+          <div class="grid-square" id="e22" onclick="getPressedCoor('22')">&#x26ab</div>
+          <div class="grid-square" id="e23" onclick="getPressedCoor('23')">&#x26ab</div>
+          <div class="grid-square" id="e24" onclick="getPressedCoor('24')">&#x26ab</div>
+          <div class="grid-square" id="e25" onclick="getPressedCoor('25')">&#x26ab</div>
+          <div class="grid-square" id="e26" onclick="getPressedCoor('26')">&#x26ab</div>
+          <div class="grid-square" id="e27" onclick="getPressedCoor('27')">&#x26ab</div>
+          <div class="grid-square" id="e28" onclick="getPressedCoor('28')">&#x26ab</div>
+          <div class="grid-square" id="e29" onclick="getPressedCoor('29')">&#x26ab</div>
+          <p class="map-marker-vertical">3</p>
+          <div class="grid-square" id="e30" onclick="getPressedCoor('30')">&#x26ab</div>
+          <div class="grid-square" id="e31" onclick="getPressedCoor('31')">&#x26ab</div>
+          <div class="grid-square" id="e32" onclick="getPressedCoor('32')">&#x26ab</div>
+          <div class="grid-square" id="e33" onclick="getPressedCoor('33')">&#x26ab</div>
+          <div class="grid-square" id="e34" onclick="getPressedCoor('34')">&#x26ab</div>
+          <div class="grid-square" id="e35" onclick="getPressedCoor('35')">&#x26ab</div>
+          <div class="grid-square" id="e36" onclick="getPressedCoor('36')">&#x26ab</div>
+          <div class="grid-square" id="e37" onclick="getPressedCoor('37')">&#x26ab</div>
+          <div class="grid-square" id="e38" onclick="getPressedCoor('38')">&#x26ab</div>
+          <div class="grid-square" id="e39" onclick="getPressedCoor('39')">&#x26ab</div>
+          <p class="map-marker-vertical">4</p>
+          <div class="grid-square" id="e40" onclick="getPressedCoor('40')">&#x26ab</div>
+          <div class="grid-square" id="e41" onclick="getPressedCoor('41')">&#x26ab</div>
+          <div class="grid-square" id="e42" onclick="getPressedCoor('42')">&#x26ab</div>
+          <div class="grid-square" id="e43" onclick="getPressedCoor('43')">&#x26ab</div>
+          <div class="grid-square" id="e44" onclick="getPressedCoor('44')">&#x26ab</div>
+          <div class="grid-square" id="e45" onclick="getPressedCoor('45')">&#x26ab</div>
+          <div class="grid-square" id="e46" onclick="getPressedCoor('46')">&#x26ab</div>
+          <div class="grid-square" id="e47" onclick="getPressedCoor('47')">&#x26ab</div>
+          <div class="grid-square" id="e48" onclick="getPressedCoor('48')">&#x26ab</div>
+          <div class="grid-square" id="e49" onclick="getPressedCoor('49')">&#x26ab</div>
+          <p class="map-marker-vertical">5</p>
+          <div class="grid-square" id="e50" onclick="getPressedCoor('50')">&#x26ab</div>
+          <div class="grid-square" id="e51" onclick="getPressedCoor('51')">&#x26ab</div>
+          <div class="grid-square" id="e52" onclick="getPressedCoor('52')">&#x26ab</div>
+          <div class="grid-square" id="e53" onclick="getPressedCoor('53')">&#x26ab</div>
+          <div class="grid-square" id="e54" onclick="getPressedCoor('54')">&#x26ab</div>
+          <div class="grid-square" id="e55" onclick="getPressedCoor('55')">&#x26ab</div>
+          <div class="grid-square" id="e56" onclick="getPressedCoor('56')">&#x26ab</div>
+          <div class="grid-square" id="e57" onclick="getPressedCoor('57')">&#x26ab</div>
+          <div class="grid-square" id="e58" onclick="getPressedCoor('58')">&#x26ab</div>
+          <div class="grid-square" id="e59" onclick="getPressedCoor('59')">&#x26ab</div>
+          <p class="map-marker-vertical">6</p>
+          <div class="grid-square" id="e60" onclick="getPressedCoor('60')">&#x26ab</div>
+          <div class="grid-square" id="e61" onclick="getPressedCoor('61')">&#x26ab</div>
+          <div class="grid-square" id="e62" onclick="getPressedCoor('62')">&#x26ab</div>
+          <div class="grid-square" id="e63" onclick="getPressedCoor('63')">&#x26ab</div>
+          <div class="grid-square" id="e64" onclick="getPressedCoor('64')">&#x26ab</div>
+          <div class="grid-square" id="e65" onclick="getPressedCoor('65')">&#x26ab</div>
+          <div class="grid-square" id="e66" onclick="getPressedCoor('66')">&#x26ab</div>
+          <div class="grid-square" id="e67" onclick="getPressedCoor('67')">&#x26ab</div>
+          <div class="grid-square" id="e68" onclick="getPressedCoor('68')">&#x26ab</div>
+          <div class="grid-square" id="e69" onclick="getPressedCoor('69')">&#x26ab</div>
+          <p class="map-marker-vertical">7</p>
+          <div class="grid-square" id="e70" onclick="getPressedCoor('70')">&#x26ab</div>
+          <div class="grid-square" id="e71" onclick="getPressedCoor('71')">&#x26ab</div>
+          <div class="grid-square" id="e72" onclick="getPressedCoor('72')">&#x26ab</div>
+          <div class="grid-square" id="e73" onclick="getPressedCoor('73')">&#x26ab</div>
+          <div class="grid-square" id="e74" onclick="getPressedCoor('74')">&#x26ab</div>
+          <div class="grid-square" id="e75" onclick="getPressedCoor('75')">&#x26ab</div>
+          <div class="grid-square" id="e76" onclick="getPressedCoor('76')">&#x26ab</div>
+          <div class="grid-square" id="e77" onclick="getPressedCoor('77')">&#x26ab</div>
+          <div class="grid-square" id="e78" onclick="getPressedCoor('78')">&#x26ab</div>
+          <div class="grid-square" id="e79" onclick="getPressedCoor('79')">&#x26ab</div>
+          <p class="map-marker-vertical">8</p>
+          <div class="grid-square" id="e80" onclick="getPressedCoor('80')">&#x26ab</div>
+          <div class="grid-square" id="e81" onclick="getPressedCoor('81')">&#x26ab</div>
+          <div class="grid-square" id="e82" onclick="getPressedCoor('82')">&#x26ab</div>
+          <div class="grid-square" id="e83" onclick="getPressedCoor('83')">&#x26ab</div>
+          <div class="grid-square" id="e84" onclick="getPressedCoor('84')">&#x26ab</div>
+          <div class="grid-square" id="e85" onclick="getPressedCoor('85')">&#x26ab</div>
+          <div class="grid-square" id="e86" onclick="getPressedCoor('86')">&#x26ab</div>
+          <div class="grid-square" id="e87" onclick="getPressedCoor('87')">&#x26ab</div>
+          <div class="grid-square" id="e88" onclick="getPressedCoor('88')">&#x26ab</div>
+          <div class="grid-square" id="e89" onclick="getPressedCoor('89')">&#x26ab</div>
+          <p class="map-marker-vertical">9</p>
+          <div class="grid-square" id="e90" onclick="getPressedCoor('90')">&#x26ab</div>
+          <div class="grid-square" id="e91" onclick="getPressedCoor('91')">&#x26ab</div>
+          <div class="grid-square" id="e92" onclick="getPressedCoor('92')">&#x26ab</div>
+          <div class="grid-square" id="e93" onclick="getPressedCoor('93')">&#x26ab</div>
+          <div class="grid-square" id="e94" onclick="getPressedCoor('94')">&#x26ab</div>
+          <div class="grid-square" id="e95" onclick="getPressedCoor('95')">&#x26ab</div>
+          <div class="grid-square" id="e96" onclick="getPressedCoor('96')">&#x26ab</div>
+          <div class="grid-square" id="e97" onclick="getPressedCoor('97')">&#x26ab</div>
+          <div class="grid-square" id="e98" onclick="getPressedCoor('98')">&#x26ab</div>
+          <div class="grid-square" id="e99" onclick="getPressedCoor('99')">&#x26ab</div>
+        </div>
+      </div>
+
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

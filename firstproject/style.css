@@ -1,0 +1,66 @@
+body {
+  background-color: gray;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cpu-choice-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.cpu-option {
+  font-size: 40px;
+  opacity: 50%;
+}
+.chosen {
+  opacity: 100%;
+}
+
+
+.outcome {
+
+  margin-top: -2%;
+}
+
+.player-choice-container {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+button {
+  font-size: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 80%;  
+}
+
+button:active {
+  opacity: 60%;
+}
+
+.stat-container {
+
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8%;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Rock, Paper, Scissors!</h2>
+      <div class="cpu-choice-container" id="js-cpu-choice">
+        <p class="cpu-rock cpu-option chosen" id="cpu-rock">&#9994</p>
+        <p class="cpu-paper cpu-option chosen" id="cpu-paper">&#9995</p>
+        <p class="cpu-scissors cpu-option chosen" id="cpu-scissors">&#9996</p>
+      </div>
+
+      <h2 class="outcome" id="outcome">Click your choice!</h2>
+
+      <div class="player-choice-container">
+        <button onclick="setPlayerChoice('rock')" class="rock">&#9994</button>
+        <button onclick="setPlayerChoice('paper')"  class="paper">&#9995</button>
+        <button onclick="setPlayerChoice('scissors')"  class="scissors">&#9996</button>
+
+      </div>
+      <div class="stat-container">
+        <p>Wins:</p>
+        <p id="wins">0</p>
+        <p>Losses:</p>
+        <p id="losses">0</p>
+        <p>Ties:</p>
+        <p id="ties">0</p>
+      </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

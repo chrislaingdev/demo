@@ -1,0 +1,3 @@
+console.log(JSON.parse(JSON.stringify(obj)))
+use instead of console.log(obj) to get accurate reading 
+that seemed to be caused by live view 
